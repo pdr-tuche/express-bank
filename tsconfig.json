@@ -12,7 +12,22 @@
         "resolveJsonModule": true,
         "declaration": true,
         "declarationMap": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ],
+            "@infrastructure/*": [
+                "src/infrastructure/*"
+            ],
+            "@application/*": [
+                "src/application/*"
+            ],
+            "@domain/*": [
+                "src/domain/*"
+            ]
+        }
     },
     "include": [
         "src"
@@ -23,6 +38,9 @@
     ],
     "ts-node": {
         "esm": false,
-        "experimentalEsm": false
+        "experimentalEsm": false,
+        "compilerOptions": {
+            "module": "commonjs"
+        }
     }
 }
