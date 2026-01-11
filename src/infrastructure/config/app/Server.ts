@@ -1,5 +1,5 @@
 import express, { Express } from "express";
-import { Routes } from "../../routes/index";
+import { Routes } from "@infrastructure/routes";
 
 export class Server {
   private app: Express;

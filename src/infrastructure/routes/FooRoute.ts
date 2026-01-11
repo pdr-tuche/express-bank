@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { FooController } from "../../application/controller/FooController";
+import { FooController } from "@/application/controller/FooController";
 
-export class FooRouter {
+export class FooRoute {
   static getRouter() {
     const router = Router();
 

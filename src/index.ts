@@ -1,4 +1,5 @@
-import { Application } from "./infrastructure/config/app/Application";
+import "tsconfig-paths/register";
+import { Application } from "@infrastructure/config/app/Application";
 
 const application = new Application();
 application.run();
