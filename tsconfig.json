@@ -1,24 +1,18 @@
 {
     "compilerOptions": {
         "target": "ES2020",
-        "module": "ES2020",
-        "moduleResolution": "Node",
+        "module": "commonjs",
+        "moduleResolution": "node",
         "outDir": "dist",
         "rootDir": "src",
         "strict": true,
         "esModuleInterop": true,
-        "resolveJsonModule": true,
         "skipLibCheck": true,
-        "sourceMap": true,
-        "types": [
-            "node"
-        ],
-        "baseUrl": "src",
-        "paths": {
-            "@/*": [
-                "src/*"
-            ]
-        }
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true
     },
     "include": [
         "src"
@@ -26,5 +20,9 @@
     "exclude": [
         "node_modules",
         "dist"
-    ]
+    ],
+    "ts-node": {
+        "esm": false,
+        "experimentalEsm": false
+    }
 }

@@ -12,7 +12,6 @@
   },
   "license": "MIT",
   "author": "Pedro Neves",
-  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --exec ts-node src/index.ts",
