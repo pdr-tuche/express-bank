@@ -1,4 +1,3 @@
-import { FooRepository } from "@/infrastructure/repository/FooRepository";
 import { FooRepositoryInterface } from "@domain/repository/FooRepositoryInterface";
 
 export class FooService {
