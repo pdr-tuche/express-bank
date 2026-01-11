@@ -1,16 +1,6 @@
-import express from 'express';
+import { Application } from "./infrastructure/config/app/Application";
 
-const app = express();
-const PORT = process.env.PORT || 3000;
+const application = new Application();
+application.run();
 
-app.use(express.json());
-
-app.get('/', (req, res) => {
-    res.json({ message: 'Welcome to Express Bank' });
-});
-
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
-
-export default app;
+export default application.getServer().getApp();

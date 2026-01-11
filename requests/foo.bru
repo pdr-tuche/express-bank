@@ -1,11 +1,11 @@
 meta {
-  name: health
+  name: foo
   type: http
-  seq: 1
+  seq: 3
 }
 
 get {
-  url: http://{{base_url}}:{{port}}/health
+  url: http://{{base_url}}:{{port}}/foo
   body: none
   auth: inherit
 }
