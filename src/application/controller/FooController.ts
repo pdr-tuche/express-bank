@@ -5,7 +5,7 @@ import { Request, Response } from "express";
 export class FooController {
   constructor(private readonly fooService: FooService) {}
 
-  handle(req: Request, res: Response): Promise<Foo> {
-    return this.fooService.findById(1);
+  async handle(req: Request, res: Response): Promise<void> {
+    res.json(await this.fooService.findById(1));
   }
 }

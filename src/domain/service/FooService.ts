@@ -3,9 +3,7 @@ import { FooRepositoryInterface } from "@domain/repository/FooRepositoryInterfac
 export class FooService {
   constructor(private readonly fooRepository: FooRepositoryInterface) {}
 
-  findById(id: number) {
-    const x = this.fooRepository.findById(id);
-    console.log(x);
-    return x;
+  async findById(id: number) {
+    return await this.fooRepository.findById(id);
   }
 }
