@@ -1,14 +1,14 @@
 {
-  "name": "express-bank",
+  "name": "ts-express-skeleton",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/pdr-tuche/express-bank#readme",
+  "homepage": "https://github.com/pdr-tuche/ts-express-skeleton#readme",
   "bugs": {
-    "url": "https://github.com/pdr-tuche/express-bank/issues"
+    "url": "https://github.com/pdr-tuche/ts-express-skeleton/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pdr-tuche/express-bank.git"
+    "url": "git+https://github.com/pdr-tuche/ts-express-skeleton.git"
   },
   "license": "MIT",
   "author": "Pedro Neves",
