@@ -1,0 +1,16 @@
+meta {
+  name: foo
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://{{base_url}}:{{port}}/foo
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
